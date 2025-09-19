@@ -3,9 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Layout with Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* This makes sure the body is at least the full height of the viewport */
+        }
+        
+        .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            flex: 1; /* This makes the main content take up all available space, pushing the footer down */
+            padding: 50px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .site-footer {
+            background-color: #1a233b;
+            color: #e0e6f6;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column {
+            width: 23%;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h4 {
+            color: #ffd700;
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-column p {
+            margin: 0 0 10px;
+            line-height: 1.6;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #e0e6f6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: #ffd700;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #e0e6f6;
+            font-size: 24px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: #99a2b5;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-    <h1> This is footer </h1>
-</body>
+
+    <div class="header">
+        <h1>Welcome to My Website</h1>
+    </div>
+    
+
+    <div class="main-content">
+        <h2>This is the main content of the page.</h2>
+        <p>This is placeholder text to fill the space. You can add your main content here.</p>
+        <p>Adding more content will push the footer down naturally.</p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>ABOUT PROJECT</h4>
+                    <p>Smart AI-based Allocation Engine for PM Internship Scheme - ensuring fair, transparent, and skill-driven internship allocation.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>CONTACT</h4>
+                    <p>Email: support@pm-internship.org</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Pune, India</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-icons">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/omkarwadle" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PM Internship Scheme | Designed for Hackathon with ❤️</p>
+            </div>
+        </div>
+    </footer>
+    </body>
 </html>
