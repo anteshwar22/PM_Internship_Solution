@@ -1,14 +1,128 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
-    <h1>
-      hi my name is anteshwar 
-      
-    </h1>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen flex items-center justify-center text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');">
+    <div class="bg-black/50 absolute inset-0"></div>
+    <div class="relative z-10" data-aos="fade-up">
+      <h1 class="text-5xl font-bold mb-4">Develop Your Mind and Skills</h1>
+      <p class="text-lg mb-6">More than 100+ online courses</p>
+      <div class="space-x-4">
+        <a href="#about" class="px-6 py-3 bg-yellow-500 text-black rounded-lg font-semibold hover:bg-yellow-400">Get Started</a>
+        <a href="#courses" class="px-6 py-3 border border-yellow-500 rounded-lg font-semibold hover:bg-yellow-500 hover:text-black">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">A Few Words About Us</h2>
+    <p class="max-w-2xl mx-auto text-gray-600 mb-8">
+      We provide AI-based automation for PM Internship schemes. Our platform helps students, institutions and policymakers collaborate better.
+    </p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-2">Best Industry Trainers</h3>
+        <p class="text-gray-600">Learn from top mentors across industries.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-2">Better Platforms</h3>
+        <p class="text-gray-600">Smooth collaboration between students and institutions.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-2">National Outreach</h3>
+        <p class="text-gray-600">Programs accessible across the nation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-16 bg-gray-100" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Featured Programs</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-5">
+          <img src="https://source.unsplash.com/400x250/?coding" class="rounded-lg mb-4" />
+          <h3 class="font-semibold text-xl mb-2">Web Development</h3>
+          <p class="text-gray-600">Frontend & Backend internship courses.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-5">
+          <img src="https://source.unsplash.com/400x250/?technology" class="rounded-lg mb-4" />
+          <h3 class="font-semibold text-xl mb-2">Information Technology</h3>
+          <p class="text-gray-600">Internships in AI, ML, Data Science & more.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-5">
+          <img src="https://source.unsplash.com/400x250/?design" class="rounded-lg mb-4" />
+          <h3 class="font-semibold text-xl mb-2">Web Design</h3>
+          <p class="text-gray-600">UI/UX internships for creative learners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-16 container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-10">Meet Our Team</h2>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="bg-white rounded-xl shadow p-6">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" class="w-24 h-24 mx-auto rounded-full border-4 border-yellow-400 mb-4">
+        <h3 class="font-semibold">Alex Smith</h3>
+        <p class="text-gray-500 text-sm">Web Developer</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-24 h-24 mx-auto rounded-full border-4 border-yellow-400 mb-4">
+        <h3 class="font-semibold">Irsy Green</h3>
+        <p class="text-gray-500 text-sm">Designer</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <img src="https://randomuser.me/api/portraits/men/14.jpg" class="w-24 h-24 mx-auto rounded-full border-4 border-yellow-400 mb-4">
+        <h3 class="font-semibold">Aar Richmond</h3>
+        <p class="text-gray-500 text-sm">Instructor</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <img src="https://randomuser.me/api/portraits/women/18.jpg" class="w-24 h-24 mx-auto rounded-full border-4 border-yellow-400 mb-4">
+        <h3 class="font-semibold">Rose Swanson</h3>
+        <p class="text-gray-500 text-sm">Coordinator</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-900 text-white" data-aos="fade-up">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+        <p class="mb-6 text-gray-300">Reach out to us for internships, collaborations, or queries.</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg text-black" required />
+          <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg text-black" required />
+          <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg text-black"></textarea>
+          <button class="px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400">Submit</button>
+        </form>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-6 text-center">
+    <p>© 2025 Internship Portal. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+  </script>
+</body>
+</html>
